@@ -70,6 +70,55 @@
 
   \<less\>BLA\<gtr\>
 
+  <section|Dichten>
+
+  <subsection|Zähldichte vs. Dichte>
+
+  <\description>
+    <item*|Zähldichte (diskrete Zufallsvariablen)>Eine diskrete
+    Zufallsvariable <math|X> nimmt endlich oder abzählbar unendlich viele
+    Werte <math|x<rsub|i>> an. Die Wahrscheinlichkeitsverteilung ist gegeben
+    durch
+
+    <\equation*>
+      \<bbb-P\><around*|(|X=x<rsub|i>|)>=f<rsub|X><around*|(|x<rsub|i>|)>=
+      p<rsub|i>
+    </equation*>
+
+    und es muss gelten <math|<big-around|\<sum\>|p<rsub|i>>=1>.
+
+    Die Verteilungsfunktion berechnet sich durch Aufsummieren der Werte der
+    Zähldichtefunktion:
+
+    <\equation*>
+      F<around*|(|x|)>=\<bbb-P\><around*|(|X\<leqslant\>x|)>=<big-around|\<sum\>|<rsub|x<rsub|i>\<less\>x>p<around*|(|x<rsub|i>|)>>
+    </equation*>
+
+    <item*|Dichte (stetige Zufallsvariablen)>Die
+    Wahrscheinlichkeitsverteilung einer stetigen (reellwertigen)
+    Zufallsvariablen <math|X> ist gegeben durch ihre Dichtefunktion
+    <math|f:\<bbb-R\>\<longrightarrow\>\<bbb-R\>> mit
+
+    <\equation*>
+      \<bbb-P\><around*|(|a\<leqslant\>x\<leqslant\>b|)>=<big-around|\<int\>|<rsub|a><rsup|b>f<around*|(|x|)>
+      \<mathd\>x>
+    </equation*>
+
+    für alle reellen Zahlen <math|a\<nocomma\>,b> und es muss gelten:
+    <math|<big-around|\<int\>|<rsub|-\<infty\>><rsup|\<infty\>>f<around*|(|x|)>
+    \<mathd\>x=1>>.
+
+    Auÿerdem ist <math|P<around*|(|X=a|)>=0> für alle
+    <math|a\<in\>\<bbb-R\>>.
+
+    Die Verteilungsfunktion ist
+
+    <\equation*>
+      F<around*|(|x|)>=\<bbb-P\><around*|(|X\<leqslant\>x|)>=<big-around|\<int\>|<rsub|-\<infty\>><rsup|x>f<around*|(|t|)>
+      \<mathd\>t>
+    </equation*>
+  </description>
+
   <section|Stochastische Unabhängigkeit>
 
   <\description>
@@ -260,6 +309,25 @@
   <subsection|Bedingte Erwartungswerte>
 
   Blubb.
+
+  <section|Aufgabentypen>
+
+  <subsection|Zähldichten>
+
+  <\description>
+    <item*|Parameter bestimmen, sodass Funktion eine Zähldichte wird>Es muss
+    gelten:
+
+    <\equation*>
+      <big-around|\<sum\>|<rsub|w\<in\>\<Omega\>>f<around*|(|\<omega\>|)>>=1
+    </equation*>
+
+    Danach muss man aber noch zeigen, dass
+    <math|f<around*|(|\<omega\>|)>\<geqslant\>0> für alle
+    <math|w\<in\>\<Omega\>> gilt!
+  </description>
+
+  \;
 </body>
 
 <\initial>
@@ -271,9 +339,12 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?>>
-    <associate|auto-10|<tuple|3.3|?>>
-    <associate|auto-11|<tuple|3.4|?>>
-    <associate|auto-12|<tuple|3.3.2|?>>
+    <associate|auto-10|<tuple|4.1|?>>
+    <associate|auto-11|<tuple|4.2|?>>
+    <associate|auto-12|<tuple|4.3|?>>
+    <associate|auto-13|<tuple|4.4|?>>
+    <associate|auto-14|<tuple|5|?>>
+    <associate|auto-15|<tuple|5.1|?>>
     <associate|auto-2|<tuple|1.1|?>>
     <associate|auto-3|<tuple|1.2|?>>
     <associate|auto-4|<tuple|1.3|?>>
@@ -281,7 +352,7 @@
     <associate|auto-6|<tuple|2.1|?>>
     <associate|auto-7|<tuple|3|?>>
     <associate|auto-8|<tuple|3.1|?>>
-    <associate|auto-9|<tuple|3.2|?>>
+    <associate|auto-9|<tuple|4|?>>
   </collection>
 </references>
 
@@ -303,6 +374,34 @@
       <with|par-left|<quote|1.5fn>|Statistische Maÿzahlen
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Stochastische
+      Unabhängigkeit> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <with|par-left|<quote|1.5fn>|Faltungen (Summen von unabhängigen
+      Zufallsvariablen) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Maÿzahlen
+      von Verteilungen> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.5fn>
+
+      <with|par-left|<quote|1.5fn>|Erwartungswert
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
+
+      <with|par-left|<quote|1.5fn>|Varianz
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      <with|par-left|<quote|1.5fn>|Momente
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|1.5fn>|Bedingte Erwartungswerte
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
     </associate>
   </collection>
 </auxiliary>
